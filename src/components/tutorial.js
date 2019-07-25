@@ -1,7 +1,7 @@
-import NavBar from './components/navBar';
+import NavBar from './components/NavBar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React,{ Component } from 'react';
-import Detail from './components/Detail'
+import Detail from './components/Detail';
 
 function currentDate(){
   var today = new Date();
@@ -12,20 +12,20 @@ function currentDate(){
   return today
 }
 
-class App extends Component {
+class Tutorial extends Component {
   render() {
     return (
       <div className="body">
         <div className="container">
-          <h1 className="text-center">React web Application</h1>
+          <h1 className="text-center">Tutorial Library</h1>
           <h5 className="text-center">{currentDate()}</h5>
           <NavBar />
         </div>
-        <Detail /> 
+        <Detail />
       </div>
 
     );
   }
 }
 
-export default App;
+export default Tutorial;
